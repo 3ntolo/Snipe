@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\Davide\Desktop\Java\Snipe\.metadata\.plugins\org.eclipse.jdt.core
+911300927.index
+563385632.index
+972206186.index
