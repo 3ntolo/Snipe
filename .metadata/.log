@@ -11,3 +11,28 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-03-04 21:01:13.120
 !MESSAGE Failed to load properties file for project 'SnipeApplication'
+!SESSION 2013-03-09 18:39:13.769 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.7.0_17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_CA
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.adt 4 4 2013-03-09 18:40:06.827
+!MESSAGE Failed
+!STACK 0
+java.util.EmptyStackException
+	at java.util.Stack.peek(Unknown Source)
+	at java.util.Stack.pop(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.ElementImpl.getDefaultValue(ElementImpl.java:395)
+	at org.eclipse.wst.xml.core.internal.document.ElementImpl.getAttributeNode(ElementImpl.java:271)
+	at org.eclipse.wst.xml.core.internal.document.AttrImpl.getNamespaceURI(AttrImpl.java:243)
+	at org.eclipse.wst.xml.core.internal.document.ElementImpl.getAttributeNodeNS(ElementImpl.java:321)
+	at org.eclipse.wst.xml.core.internal.document.ElementImpl.hasAttributeNS(ElementImpl.java:674)
+	at com.android.tools.lint.detector.api.Project.readManifest(Project.java:489)
+	at com.android.tools.lint.client.api.LintDriver.runFileDetectors(LintDriver.java:798)
+	at com.android.tools.lint.client.api.LintDriver.checkProject(LintDriver.java:732)
+	at com.android.tools.lint.client.api.LintDriver.analyze(LintDriver.java:340)
+	at com.android.ide.eclipse.adt.internal.lint.LintJob.run(LintJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
